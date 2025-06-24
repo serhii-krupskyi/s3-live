@@ -29,7 +29,7 @@ inputs = {
   environment            = local.environment
   lifecycle_rule_enabled = true
   s3_policy_resources = [
-    "arn:aws:s3:::adra-${local.service_name}-${local.environment}",
+    "arn:aws:s3:::quadro-${local.service_name}-${local.environment}",
   ]
   additional_tags = {
     Environment = title(local.environment)
