@@ -20,8 +20,8 @@ locals {
 }
 
 inputs = {
-  remote_state_key       = "${local.environment}/${local.aws_region}/containers/eks/terraform.tfstate"
-  aws_profile            = local.account_variables.locals.aws_profile
+  remote_state_key            = "${local.environment}/${local.aws_region}/containers/eks/terraform.tfstate"
+  aws_profile             = local.account_variables.locals.aws_profile
   aws_region             = local.aws_region
   terraform_bucket       = local.environment_vars.locals.terraform_bucket
   service_name           = local.service_name

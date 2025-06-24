@@ -1,0 +1,12 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.99.1 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terragrunt_validate_inputs
+      name: Terragrunt validate inputs
+      args:
+          - '--args=--terragrunt-strict-validate'
+    - id: terragrunt_fmt
+      name: Terragrunt validate forman
+    - id: terragrunt_validate
+      name: Terragrunt validate
